@@ -77,7 +77,7 @@
                             </div>
                             <div class="form-group row">
                                 <label for="org_contact"
-                                       class="col-md-4 col-form-label text-md-right">{{ __('Oranisation Contact') }}</label>
+                                       class="col-md-4 col-form-label text-md-right">{{ __('Organisation Contact') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="org_contact" type="tel"
@@ -94,7 +94,7 @@
                             </div>
                             <div class="form-group row">
                                 <label for="org_location"
-                                       class="col-md-4 col-form-label text-md-right">{{ __('Oranisation Location') }}</label>
+                                       class="col-md-4 col-form-label text-md-right">{{ __('Organisation Location') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="org_location" type="text"

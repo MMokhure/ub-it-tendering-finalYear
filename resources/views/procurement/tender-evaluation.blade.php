@@ -143,9 +143,6 @@
                                                                 <i class="fa fa-check fa-2x text-success"></i>
                                                             @endif
                                                         </td>
-                                                        <td>
-                                                            <i class="fa fa-check fa-2x text-success"></i>
-                                                        </td>
                                                         <td>{{ $tender->status }}</td>
                                                         <td>
                                                             {{ $bid->score ?? 0 }}
