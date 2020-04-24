@@ -168,7 +168,7 @@
                                                 <button type="button" class="btn btn-primary"
                                                         data-toggle="modal"
                                                         data-target="#model{{ $tender->id }}">
-                                                    <i class="fa fa-share-square"></i> Publish Results
+                                                    <i class="fa fa-share-square"></i> Award Tender
                                                 </button>
 
                                                 <!-- Modal -->
@@ -183,7 +183,7 @@
                                                                    value="{{ $tender->id }}">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
-                                                                    <h5 class="modal-title">Publish Results for
+                                                                    <h5 class="modal-title">Award Tender for
                                                                         Tender: {{ $tender->name }}</h5>
                                                                     <button type="button" class="close"
                                                                             data-dismiss="modal"
@@ -192,7 +192,7 @@
                                                                     </button>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    Publishing the results for this tender will award a
+                                                                    warding tender for this tender will award a
                                                                     bidder with highest score.
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -200,7 +200,7 @@
                                                                             data-dismiss="modal">Close
                                                                     </button>
                                                                     <button type="submit" class="btn btn-success">
-                                                                        Publish
+                                                                        Award
                                                                     </button>
                                                                 </div>
                                                             </div>
