@@ -192,7 +192,7 @@
                                                                     </button>
                                                                 </div>
                                                                 <div class="modal-body">
-                                                                    warding tender for this tender will award a
+                                                                    awarding tender for this tender will award a
                                                                     bidder with highest score.
                                                                 </div>
                                                                 <div class="modal-footer">

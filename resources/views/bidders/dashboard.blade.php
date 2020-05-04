@@ -28,7 +28,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                            <a href="{{ route('bidder.awards') }}">My Tenders & Bids</a>
+                            <a href="{{ route('bidder.awards') }}">My Tenders Awards & Bids</a>
                         </div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
                     </div>

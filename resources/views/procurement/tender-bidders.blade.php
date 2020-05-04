@@ -53,7 +53,7 @@
                                         <!-- Button trigger modal -->
                                             <button type="button" class="btn btn-warning btn-sm" data-toggle="modal"
                                                     data-target="#model{{ $tender->id }}">
-                                                <i class="fa fa-pencil-alt"></i> Edit
+                                                <i class="fa fa-pencil-alt"></i> Edit Tender
                                             </button>
 
                                             <!-- Modal -->
@@ -67,7 +67,7 @@
                                                             @csrf
                                                             @method('PUT')
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title">Modal title</h5>
+                                                                <h5 class="modal-title">Edit Tender</h5>
                                                                 <button type="button" class="close" data-dismiss="modal"
                                                                         aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
@@ -169,7 +169,7 @@
                                             <!-- Button trigger modal -->
                                             <button class="delete btn btn-danger btn-sm text-center text-white"
                                                     data-toggle="modal" data-target="#modelDelete{{ $tender->id }}">
-                                                <i class="fa fa-trash"></i> Delete
+                                                <i class="fa fa-trash"></i> Cancel Tender
                                             </button>
 
                                             <!-- Modal -->
