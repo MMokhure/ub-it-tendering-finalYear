@@ -22,14 +22,14 @@
                         @csrf
                         <div class="form-group {{ $errors->has('org_name') ? 'has-error' : '' }}">
                             <label for="venue">Organisation Name</label>
-                            <input type="text" id="org_name" name="org_name" class="form-control"
-                                   value="{{ Auth::user()->organisation->name }}" required readonly>
+                            <input type="text" id="org_name" autocomplete = "off" name="org_name" class="form-control"
+                                   value="{{ Auth::user()->organisation->name }}" required readonly >
                             <input type="hidden" id="org_name" name="org_id" class="form-control"
                                    value="{{ Auth::user()->organisation->id }}" required>
                         </div>
                         <div class="form-group {{ $errors->has('tender_name') ? 'has-error' : '' }}">
                             <label for="venue">Tender Name</label>
-                            <input type="text" id="tender_name" name="tender_name" class="form-control"
+                            <input type="text" id="tender_name" autocomplete = "off" name="tender_name" class="form-control"
                                    value="{{ old('tender_name') }}" required>
                             @if($errors->has('tender_name'))
                                 <em class="invalid-feedback">
@@ -67,7 +67,7 @@
                         </div>
                         <div class="form-group {{ $errors->has('proc_dept') ? 'has-error' : '' }}">
                             <label for="venue">Procuring Department</label>
-                            <input type="text" id="proc_dept" name="proc_dept" class="form-control"
+                            <input type="text" autocomplete = "off" id="proc_dept" name="proc_dept" class="form-control"
                                    value="{{ old('proc_dept') }}" required>
                             @if($errors->has('proc_dept'))
                                 <em class="invalid-feedback">
