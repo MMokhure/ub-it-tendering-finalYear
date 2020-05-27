@@ -86,7 +86,7 @@
                             @endif
                         </div>
                         <div class="form-group {{ $errors->has('end_time') ? 'has-error' : '' }}">
-                            <label for="venue">Cosing Date</label>
+                            <label for="venue">Closing Date</label>
                             <input type="text" id="end_time" name="end_time" class="form-control datetime"
                                    value="{{ old('end_time') }}" required>
                             @if($errors->has('end_time'))
