@@ -40,7 +40,7 @@
         public function bid($customer)
         {
             return $this->create($customer);
-        }
+        } 
 
         /**
          *

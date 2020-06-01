@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'UBIT Tender Procurement') }}</title>
+    <title>{{ config('app.name', 'Tendering') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -117,7 +117,7 @@
                                 </div>
                                 <div>
                                     <div class="small text-gray-500">December 12, 2019</div>
-                                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    <span class="font-weight-bold">you have been awarded a new tender, 'T&C' is ready to download!</span>
                                 </div>
                             </a>
                             <a class="dropdown-item d-flex align-items-center" href="#">
