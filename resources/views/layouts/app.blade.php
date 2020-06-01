@@ -28,8 +28,8 @@
         <img src="{{ asset('img/ub-logo.jpg') }}" style="height:50px" class="mr-4"/>
         <div class="container offset-3">
             <a class="navbar-brand " href="{{ url('/') }} " style="color: white">
-                {{--                    {{ config('app.name', 'Laravel') }}--}}
-                UB Information Technology Department Procurement System
+                {{--                    {{ config('app.name', 'TENDERING') }}--}}
+                University of Botswana Information Technology Department Procurement System
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"

@@ -54,11 +54,19 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="utilities-color.html">Colors</a>
-                <a class="collapse-item" href="utilities-border.html">Borders</a>
-                <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                <a class="collapse-item" href="utilities-other.html">Other</a>
+                <h6 class="collapse-header">Rejected Tenders</h6>
+
+                        <a class="collapse-item" href="utilities-color.html"> 
+                        @foreach($tenders as $tender)
+                                <!-- @foreach($tender->bids as $bid) -->
+                                    <!-- @if ($bid->status === 'rejected') -->
+                                            <h1>{{ $tender->id }}</h1>
+                                               
+                                    <!-- @endif -->
+                                <!-- @endforeach -->
+                            @endforeach
+                        </a>
+  
             </div>
         </div>
     </li>
