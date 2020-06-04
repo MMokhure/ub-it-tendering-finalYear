@@ -32,6 +32,7 @@
                     'remember_token' => Str::random(10),
                     'created_at' => now(),
                 ],
+            
                 [
                     'id' => 3,
                     'name' => 'Moses',
