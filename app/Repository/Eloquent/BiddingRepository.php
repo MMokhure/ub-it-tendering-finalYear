@@ -77,4 +77,14 @@
             $highestBid = $highestBid->load(['user','user.organisation']);
             return $highestBid;
         }
+
+        public function getMyRejectedBids(){
+           $bids =  $this->model->where([
+              'status'=>'rejected',
+              'user_id' => Auth::user()->id
+            ])->get();
+            $bids = $bids->load(['tender']);
+            return $bids;
+        
+        }
     }

@@ -93,4 +93,8 @@
         {
             //
         }
+
+        public function getMyRejectedBids(){
+            return BiddingRepository::getMyRejectedBids(); 
+        }
     }
