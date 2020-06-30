@@ -6,7 +6,6 @@
 
     class Message extends Model
     {
-        //
         protected $fillable = [
             'tender_id',
             'user_id',
