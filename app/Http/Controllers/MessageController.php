@@ -94,4 +94,9 @@
         {
             //
         }
+
+        public function view(){
+            $msgs = $this->TenderReposity->all(); 
+            return $msgs;
+        }
     }
