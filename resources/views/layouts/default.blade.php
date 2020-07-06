@@ -166,10 +166,15 @@
                                          alt="">
                                     <div class="status-indicator bg-success"></div>
                                 </div>
+                                
                                 <div>
                                     <div class="text-truncate">
-                                        	is this tender still available ?
-                                    </div>
+                                            @inject('myBids','App\Repository\BiddingRepositoryInterface')
+                            @foreach ($myBids->getMyRejectedBids() as $bid)
+                                {{ $bid->tender->name }}
+                            </div>
+                             @endforeach
+                                    
                                     <div class="small text-gray-500">Kaone Mokotedi · 2w</div>
                                 </div>
                             </a>
