@@ -79,7 +79,7 @@
         <div class="card shadow mb-4">
             <!-- Card Header - Dropdown -->
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Tenders Overview</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Tender Box</h6>
                 <div class="dropdown no-arrow">
                   
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
@@ -92,16 +92,33 @@
                     </div>
                 </div>
             </div>
+
+
+                        <table class="table table-striped table-bordered nowrap" style="width:90%">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Organisation Name</th>
+                                <th>Tender Name</th>
+                                <th>Reference No</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                     <!-- @inject('boxs','App\Repository\TenderRepositoryInterface') -->
+                           
+                            <tr>
+                                <td>2</td>
+                                <td>Mpho</td>
+                                <td>Mokhure</td>
+                                <td>201404824</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
             <!-- Card Body -->
             <div class="card-body">
                 <div class="chart-area">
-                <a>
-                    @isset($tenders)
-                            @foreach ($tenders as $tenders)
-                               <p> <a>{{ $tenders->name }}</a></p>
-                             @endforeach
-                        @endisset
-                    </a>
+                <a></a>
                 </div>
             </div>
         </div>

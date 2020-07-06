@@ -59,4 +59,6 @@
         {
             return $this->hasMany(Awards::class);
         }
+
+        public function box(){ return $this->belongsTo(Tender::class);}
     }

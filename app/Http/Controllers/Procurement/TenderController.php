@@ -42,7 +42,7 @@
         {
             $results = TenderRepository::publishTender($request);
             if ($results) {
-                $request->session()->flash('status', 'Successfully published a tender');
+                $request->session()->flash('status', 'Successfully published a tender Notice');
             }
             return redirect()->route('home');
         }

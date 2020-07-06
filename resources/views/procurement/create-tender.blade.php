@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col col-md-10  col-lg-10 col-sm-6 offset-0 ml-5">
             <div class="card">
-                <div class="card-header">Invitation to tender IT Equipment
+                <div class="card-header">Request for Quatation
                 </div>
 
                 <div class="card-body">
@@ -40,7 +40,7 @@
                         <div class="form-group {{ $errors->has('reference_no') ? 'has-error' : '' }}">
                             <label for="venue">Tender Reference Number</label>
                             <input type="text" id="reference_no" name="reference_no" class="form-control"
-                                   value="{{ Str::referenceNumber() }}" required>
+                                   value="{{ Str::referenceNumber() }}" required readonly>
                             @if($errors->has('reference_no'))
                                 <em class="invalid-feedback">
                                     {{ $errors->first('reference_no') }}
@@ -50,13 +50,13 @@
                         <div class="form-group {{ $errors->has('requirements') ? 'has-error' : '' }}">
                             <label for="requirements">Tender Requirements</label>
                             <textarea type="text" id="requirements" name="requirements"
-                                      class="form-control" required cols="1" rows="10" wrap="on"
+                                      class="form-control" required readonly cols="1" rows="10" wrap="on"
                                       style="text-align: left; padding: -10px;">{{ old('requirements') }}
 1. Company Certificate
 2. Tax Clearance
 3. Banc Acc
 4. Trading licence
-5. PPADB
+5. PPADB 
 6. Quatation
                             </textarea>
                             @if($errors->has('requirements'))

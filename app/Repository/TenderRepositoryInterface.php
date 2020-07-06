@@ -11,4 +11,6 @@
         public function availableTenders();
 
         public function awardTender($tender_id);
+
+        // public function tenderBox();
     }

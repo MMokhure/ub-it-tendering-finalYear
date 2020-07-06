@@ -22,6 +22,7 @@
             'name',
             'reference_no',
             'requirements',
+          
             'proc_dept',
             'start_time',
             'end_time',
@@ -32,10 +33,14 @@
         {
             return $this->belongsTo(User::class);
         }
-
         public function bids(): HasMany
         {
             return $this->hasMany(Bidding::class);
+        }
+
+        public function box(): HasMany 
+        {
+            return $this->hasMany(Tender::class);
         }
 
     }
