@@ -12,5 +12,5 @@
 
         public function awardTender($tender_id);
 
-        // public function tenderBox();
+        public function tenderBox();
     }

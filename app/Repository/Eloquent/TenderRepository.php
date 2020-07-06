@@ -93,10 +93,14 @@
         {
             return $this->find($id)->update($attributes);
         }
+        
+        
         public function tenderBox(){
-               
-            $tenders = $this->model->where('user_id', Auth::user()->id)->get();
-            return $tenders->load(['user.organisation', 'bids']);
+              
+            $boxs = Tender::orderBy('id')
+                 ->where('status', 'published')
+                 ->get();
+            return $boxs->load('user', 'user.organisation','bids');
            
         }
     }

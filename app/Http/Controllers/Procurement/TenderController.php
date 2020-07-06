@@ -110,4 +110,12 @@
 
             return redirect()->back();
         }
+
+        public function tenderBox(){
+            
+            $boxs = $this->TenderReposity->all(); 
+            return $boxs;
+        }
+
+
     }

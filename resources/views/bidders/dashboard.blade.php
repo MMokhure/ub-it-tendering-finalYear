@@ -94,7 +94,7 @@
             </div>
 
 
-                        <table class="table table-striped table-bordered nowrap" style="width:90%">
+                        <table class="table table-striped table-bordered nowrap col m-4" style="width:90%">
                             <thead>
                             <tr>
                                 <th>#</th>
@@ -104,14 +104,17 @@
                             </tr>
                             </thead>
                             <tbody>
-                     <!-- @inject('boxs','App\Repository\TenderRepositoryInterface') -->
-                           
+                     @inject('boxs','App\Repository\TenderRepositoryInterface')
                             <tr>
-                                <td>2</td>
-                                <td>Mpho</td>
-                                <td>Mokhure</td>
-                                <td>201404824</td>
-                            </tr>
+                                @foreach ($boxs->tenderBox() as $box)
+                                    <th>{{ $box->id }}</th>
+                                    <th>{{ $box->user->organisation->name }}</th>
+                                    <th>{{ $box->name }}</th>
+                                    <th>{{ $box->reference_no }}</th>
+                                    
+                                </tr>
+                                @endforeach
+                            
                             </tbody>
                         </table>
 
