@@ -29,7 +29,7 @@
         <div class="container offset-3">
             <a class="navbar-brand " href="{{ url('/') }} " style="color: white">
                 {{--                    {{ config('app.name', 'TENDERING') }}--}}
-                University of Botswana Information Technology Department Procurement System
+                TENDER MANAGEMENT SOFTWARE SYSTEM
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false"

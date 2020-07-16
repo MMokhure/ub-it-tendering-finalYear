@@ -159,7 +159,7 @@
                                                                 </button>
                                                                 <button type="submit" class="btn btn-primary">
                                                                     <i class="fa fa-share-square"></i> Save</button>
-                                                            </div>
+                                                           </div>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -182,7 +182,7 @@
                                                             @csrf
                                                             @method('DELETE')
                                                         <div class="modal-header">
-                                                            <h5 class="modal-title">Delete Tender</h5>
+                                                            <h5 class="modal-title">Tender Cancellation</h5>
                                                             <button type="button" class="close" data-dismiss="modal"
                                                                     aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
@@ -190,15 +190,15 @@
                                                         </div>
                                                         <div class="modal-body">
                                                             <div class="alert alert-danger" role="alert">
-                                                                <strong>Are you sure you want to delete this tender?</strong>
+                                                                <strong>Are you sure you want to cancel this tender?</strong>
                                                             </div>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary"
-                                                                    data-dismiss="modal">Close
+                                                                    data-dismiss="modal">No
                                                             </button>
 
-                                                                <button type="submit" class="btn btn-primary">Save</button>
+                                                                <button type="submit" class="btn btn-primary">Yes</button>
 
                                                         </div>
                                                         </form>

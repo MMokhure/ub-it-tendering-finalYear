@@ -119,7 +119,7 @@
                                                                             </button>
                                                                             <button type="submit"
                                                                                     class="btn btn-primary">
-                                                                                Save changes
+                                                                                `Evaluated
                                                                             </button>
                                                                         </div>
                                                                     </div>
@@ -151,7 +151,7 @@
                                                             <button class="btn btn-info btn-sm  text-center text-white"
                                                                     data-toggle="modal"
                                                                     data-target="#exampleModal{{ $bid->id }}">
-                                                                <i class="fa fa-award"></i> Evaluate
+                                                                <i class="fa fa-award"></i> Evaluate Bid
                                                             </button>
                                                         </td>
                                                     </tr>

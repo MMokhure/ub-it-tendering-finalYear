@@ -98,7 +98,7 @@
         public function tenderBox(){
               
             $boxs = Tender::orderBy('id')
-                 ->where('status', 'published')
+                 ->where('status', 'evaluated')
                  ->get();
             return $boxs->load('user', 'user.organisation','bids');
            

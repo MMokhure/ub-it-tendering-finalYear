@@ -63,7 +63,7 @@
                             <td>
                                 <a class="btn btn-info btn-sm  text-center text-white" href=""
                                    data-toggle="modal" data-target="#modelId">
-                                    <i class="fa fa-file-signature"></i> Open Application Form</a>
+                                    <i class="fa fa-file-signature"></i> Bid for Tender</a>
                             </td>
                             </tbody>
                         </table>
@@ -80,7 +80,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Tender: {{ $tender->name }}</h5>
+                    <h5 class="modal-title">You are bidding to supply {{ $tender->name }} the tender ref: {{$tender->reference_no}}</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -89,7 +89,7 @@
                     @csrf
                     <div class="modal-body">
                         <div class="alert alert-success" role="alert">
-                            <h4 class="alert-heading">Please fill the information below</h4>
+                            <h4 class="alert-heading">Please provide the following documents</h4>
                             <p>You need to provide necessary information to be awarded a tender</p>
                             <p class="mb-0"></p>
                         </div>

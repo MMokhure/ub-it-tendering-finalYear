@@ -11,7 +11,7 @@
                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                             @inject('tenders','App\Repository\TenderRepositoryInterface')
                             {{ count($tenders->availableTenders()) }}
-                        </div>
+                        </div>  
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-user-alt fa-2x text-gray-300"></i>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">10%</div>
+                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">30%</div>
                             </div>
                             <div class="col">
                                 <div class="progress progress-sm mr-2">
@@ -101,6 +101,7 @@
                                 <th>Organisation Name</th>
                                 <th>Tender Name</th>
                                 <th>Reference No</th>
+                                <th> Total Tender cost</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -111,6 +112,7 @@
                                     <th>{{ $box->user->organisation->name }}</th>
                                     <th>{{ $box->name }}</th>
                                     <th>{{ $box->reference_no }}</th>
+                                    <th>{{ $box->user->id }}
                                     
                                 </tr>
                                 @endforeach
